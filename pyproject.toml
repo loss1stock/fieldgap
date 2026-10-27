@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loss1stock-fieldgap"
+version = "0.1.0"
+description = "按字段清单核对每条记录，标出缺失率高的字段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "loss1stock" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://loss1stock.github.io"
+Repository = "https://github.com/loss1stock/fieldgap"
+Issues = "https://github.com/loss1stock/fieldgap/issues"
+
+[project.scripts]
+fieldgap = "fieldgap:main"
+
+[tool.setuptools]
+py-modules = ["fieldgap"]
